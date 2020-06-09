@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">This is a basic Rock/Paper/Scissors Game</div>
+        <div class="rizsa">Please make your choice from the following buttons: </div>
+        <div class="gombok">
+            <div class="btnwrap">
+                <button class="btn" id="btnRock" onclick="makeChoiceRock()" >Rock</button>
+            </div>
+            <div class="btnwrap">
+                <button class="btn" id="btnPaper" onclick="makeChoicePaper()">Paper</button>
+            </div>
+            <div class="btnwrap">
+                <button class="btn" id="btnScissors" onclick="makeChoiceScissors()">Scissors</button>
+            </div>
+        </div>
+        <div class="kicsiwrapper">
+            <div class="leftside">
+                <img src="rock.jpg" alt="" id="rockLeft" style="display:none">
+                <img src="paper.jpg" alt="" id="paperLeft" style="display:none">
+                <img src="scissors.jpg" alt="" id="scissorsLeft" style="display:none">
+            </div>
+            <div class="middle">
+                <h1>VS</h1>
+            </div>
+            <div class="rightside">
+                <img src="rock.jpg" alt="" id="rockRight" style="display:none">
+                <img src="paper.jpg" alt="" id="paperRight" style="display:none">
+                <img src="scissors.jpg" alt="" id="scissorsRight" style="display:none">
+            </div>
+        </div>
+        <div class="conclusion">
+            <div id="win" style="display:none"> You won !!!</div>
+            <div id="loose" style="display:none"> You loose!!!</div>
+            <div id="draw" style="display:none"> Draw !!!</div>
+        </div>
+        <button id="rePlay" onclick="rePlayer()"> Wanna play again?? </button>
+    </div>
+<script src="engine.js"></script>
+
+</body>
+
+</html>
