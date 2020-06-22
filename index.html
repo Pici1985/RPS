@@ -16,15 +16,18 @@
             <div class="btnwrap">
                 <button class="btn" id="btnRock" onclick="makeChoiceRock()" >Rock</button>
             </div>
+            <div></div>
             <div class="btnwrap">
                 <button class="btn" id="btnPaper" onclick="makeChoicePaper()">Paper</button>
             </div>
+            <div></div>
             <div class="btnwrap">
                 <button class="btn" id="btnScissors" onclick="makeChoiceScissors()">Scissors</button>
             </div>
         </div>
         <div class="kicsiwrapper">
             <div class="leftside">
+                <p>Your Choice:</p>
                 <img src="rock.jpg" alt="" id="rockLeft" style="display:none">
                 <img src="paper.jpg" alt="" id="paperLeft" style="display:none">
                 <img src="scissors.jpg" alt="" id="scissorsLeft" style="display:none">
@@ -33,6 +36,7 @@
                 <h1>VS</h1>
             </div>
             <div class="rightside">
+                <p>My Choice:</p>
                 <img src="rock.jpg" alt="" id="rockRight" style="display:none">
                 <img src="paper.jpg" alt="" id="paperRight" style="display:none">
                 <img src="scissors.jpg" alt="" id="scissorsRight" style="display:none">
@@ -40,10 +44,17 @@
         </div>
         <div class="conclusion">
             <div id="win" style="display:none"> You won !!!</div>
-            <div id="loose" style="display:none"> You loose!!!</div>
-            <div id="draw" style="display:none"> Draw !!!</div>
+            <div id="loose" style="display:none"> You lost!!!</div>
+            <div id="draw" style="display:none"> It`s a Draw !!!</div>
         </div>
-        <button id="rePlay" onclick="rePlayer()"> Wanna play again?? </button>
+
+        <div id="wrp">
+            <div id="col1"></div>
+            <div id="col2">
+                <button id="rePlay" onclick="rePlayer()"> Play again </button>
+            </div>
+            <div id="col3"></div>
+        </div>
     </div>
 <script src="engine.js"></script>
 

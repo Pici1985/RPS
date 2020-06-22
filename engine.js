@@ -1,9 +1,10 @@
-
+// function to run if choice is rock
 
 function makeChoiceRock () {
    choice = 0;  
    choice = document.getElementById("btnRock");
    document.getElementById("rockLeft").style.display = "";
+   document.getElementById("btnRock").disabled = true;
    document.getElementById("btnPaper").disabled = true;
    document.getElementById("btnScissors").disabled = true;
    choice = 0;
@@ -12,10 +13,13 @@ function makeChoiceRock () {
    compareWin();    
 }
 
+// function to run if choice is paper
+
 function makeChoicePaper () {
     choice = 0;
     choice = document.getElementById("btnPaper");
     document.getElementById("paperLeft").style.display = "";
+    document.getElementById("btnPaper").disabled = true;
     document.getElementById("btnRock").disabled = true;
     document.getElementById("btnScissors").disabled = true;
     choice = 1;
@@ -24,17 +28,22 @@ function makeChoicePaper () {
      compareWin();
  }
 
+// function to run if choice is scissors
+
  function makeChoiceScissors () {
     choice = 0;   
     choice = document.getElementById("btnScissors");
     document.getElementById("scissorsLeft").style.display = "";
     document.getElementById("btnPaper").disabled = true;
     document.getElementById("btnRock").disabled = true;
+    document.getElementById("btnScissors").disabled = true;
     choice = 2;
     /* console.log(choice); */
     randomChoice();
     compareWin();
  }
+
+// function to create the computers choice with a random number
 
 function randomChoice() {
     autoChoice = Math.floor(Math.random() * 3);
@@ -48,12 +57,15 @@ function randomChoice() {
     } 
 }
 
+// checker function while coding the app,  obsolete 
 
 function logIt() {
     console.log(choice); 
     console.log(autoChoice);
 }
 
+
+// final score comparison function to see who won
 
 function compareWin() {
 if (choice == autoChoice) {
@@ -84,6 +96,8 @@ if (choice == autoChoice) {
       console.log("Invalid input!!")
   }
 }
+
+// function to reload the page and start the game again
 
 function rePlayer() {
     var replay = document.getElementById("rePlay");
