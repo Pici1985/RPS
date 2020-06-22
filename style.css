@@ -102,21 +102,13 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-/*
-#col1 {
-    border: 1px solid red;
+
+@viewport {
+	zoom: 1.0;
+	width: extend-to-zoom;
 }
 
-#col2{ 
-    border: 1px solid red;
+@-ms-viewport {
+	width: extend-to-zoom;
+	zoom: 1.0;
 }
-
-#col3 {
-    border: 1px solid red;
-}
-*/
-/* @media only screen and (max-width: 768px) {
-    body {
-      width: 100%;
-    }
-  } */
